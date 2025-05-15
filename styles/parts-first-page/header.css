@@ -126,7 +126,10 @@
 
 }
 
-@media (max-width: 500px){
+@media (max-width: 550px){
+    .header-website{
+        height: 10vh;
+    }
     .ul-header-mobile{
         padding: 7px 7px;
     }
