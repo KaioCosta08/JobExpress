@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body-inicio{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-website{
+    height: 15vh;
+    background-color: #110958;
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px 2px black;
+}
+
+#box-logo{
+    display: flex;
+}
+
+.ul-header{
+    width: 790px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.li-header{
+    width: 180px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 10px;
+    transition: 1s;
+    cursor: pointer;
+}   
+
+.li-header:hover{
+    transition: 1s;
+    background-color: #DCDCDC;
+}
+
+.a-header-second{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.btn-conectar-user{
+    width: 150px;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    gap: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.btn-conectar-user:hover{
+    background-color: #A9A9A9;
+}
+
+
+/* Mecanismos do header mobile */
+.menu-mobile{
+    display: none;
+}
+
+.nav-header-mobile{
+    display: none;
+}
+
+/* Respnsividade do header */
+
+@media (max-width: 1350px) {
+    .header-website{
+        padding: 30px 25px;
+        justify-content: space-around;
+    }
+    .ul-header{
+        margin-right: 130px;
+    }
+    .btn-conectar-user{
+        display: none;
+    }
+    .menu-mobile{
+        cursor: pointer;
+        display: flex;
+    }
+    .ul-header{
+        display: none;
+    }
+        #box-logo{
+        font-size: 13px;
+    }
+    .nav-header-mobile{
+        background-color: #fff;
+        box-shadow: 0 0 10px 1px black;
+    }
+    .ul-header-mobile{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .li-header-mobile, .a-header-mobile{
+        list-style-type: none;
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .nav-header-mobile{
+        display: block;
+    }
+
+}
+
+@media (max-width: 500px){
+    .ul-header-mobile{
+        padding: 7px 7px;
+    }
+    .a-header-mobile{
+        font-size: 14px;
+    }
+}

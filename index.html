@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Job Express - Inicio</title>
 </head>
-<body>
+<body id="body-inicio">
     <!-- Inicio do header -->
+     <header class="header-website">
+
+        <!-- Caixa da logo -->
+        <div id="box-logo">
+            <h1 style="color: #fff;">Job</h1>
+            <h1 style="color: #D1AE1E;">Express</h1>
+        </div>
+
+        <!-- Menu de links (Desktop and Notebook) -->
+        <nav class="nav-header">
+
+            <ul class="ul-header">
+
+                <!-- Link do inicio do site -->
+                <a href="#">
+                    <li class="li-header">
+                        <img src="images/home.svg" alt="inicio" class="img-header">
+                        <a href="#" class="a-header-second">Inicio</a>
+                    </li>
+                </a>
+
+                <!-- Link dos cursos do site -->
+                <a href="#">
+                    <li class="li-header">
+                        <img src="images/cursos.svg" alt="cursos" class="img-header">
+                        <a href="#" class="a-header-second">Cursos</a>
+                    </li>
+                </a>
+
+                <!-- Link das vagas do site -->
+                <a href="#">
+                    <li class="li-header">
+                        <img src="images/vagas.svg" alt="vagas" class="img-header">
+                        <a href="#" class="a-header-second">Vagas</a>
+                    </li>
+                </a>
+
+                <!-- Link da Empresa do site -->
+                <a href="#">
+                    <li class="li-header">
+                        <img src="images/empresa.png" alt="empresa" class="img-header">
+                        <a href="#" class="a-header-second">Empresa</a>
+                    </li>
+                </a>
+
+                <!-- Link da Empresa do site -->
+                <a href="#">
+                    <li class="li-header">
+                        <img src="images/comunidade.svg" alt="empresa" class="img-header">
+                        <a href="#" class="a-header-second">Comunidade</a>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+
+        <!-- Button para se conectar ou se cadastrar no site -->
+         <a href="#" id="btn-connect-usuario">
+            <button class="btn-conectar-user">
+                <img src="images/user-photo.svg" alt="user-photo">
+                <a href="#"  style=" color: #000; text-decoration: none;" id="link-btn-connect-user">Entrar</a>
+            </button>
+         </a>
+
+         <!-- Button para se conectar ou se cadastrar no site (Responsividade) -->
+          <a href="#" id="button-menu-mobile">
+            <img src="images/menu-mobile.svg" alt="menu-mobile" class="menu-mobile">
+          </a>
+     </header>
+     
+     <!-- Nav de links responsivo para mobile -->
+     <nav class="nav-header-mobile">
+        <ul class="ul-header-mobile">
+            <li class="li-header-mobile"><a href="#" class="a-header-mobile">Inicio</a></li>
+            <li class="li-header-mobile"><a href="#" class="a-header-mobile">Cursos</a></li>
+            <li class="li-header-mobile"><a href="#" class="a-header-mobile">Vagas</a></li>
+            <li class="li-header-mobile"><a href="#" class="a-header-mobile">Empresa</a></li>
+            <li class="li-header-mobile"><a href="#" class="a-header-mobile">Comunidade</a></li>
+        </ul>
+     </nav>
 </body>
 </html>
