@@ -72,7 +72,7 @@
 
 
 /* Mecanismos do header mobile */
-.menu-mobile{
+.icons-of-ferramentas{
     display: none;
 }
 
@@ -119,12 +119,17 @@
         text-decoration: none;
         color: #000;
         text-transform: uppercase;
+        font-weight: 850;
         cursor: pointer;
     }
     .nav-header-mobile{
         display: block;
     }
-
+    .icons-of-ferramentas{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
 }
 
 @media (max-width: 700px){

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Job Express - Inicio</title>
 </head>
+
 <body id="body-inicio">
     <!-- Inicio do header -->
-     <header class="header-website">
+    <header class="header-website">
 
         <!-- Caixa da logo -->
         <div id="box-logo">
@@ -64,21 +66,25 @@
         </nav>
 
         <!-- Button para se conectar ou se cadastrar no site -->
-         <a href="#" id="btn-connect-usuario">
+        <a href="#" id="btn-connect-usuario">
             <button class="btn-conectar-user">
                 <img src="images/user-photo.svg" alt="user-photo">
-                <a href="#"  style=" color: #000; text-decoration: none;" id="link-btn-connect-user">Entrar</a>
+                <a href="#" style=" color: #000; text-decoration: none;" id="link-btn-connect-user">Entrar</a>
             </button>
-         </a>
+        </a>
 
-         <!-- Button para se conectar ou se cadastrar no site (Responsividade) -->
-          <a href="#" id="button-menu-mobile">
-            <img src="images/menu-mobile.svg" alt="menu-mobile" class="menu-mobile">
-          </a>
-     </header>
-     
-     <!-- Nav de links responsivo para mobile -->
-     <nav class="nav-header-mobile">
+        <!-- Icons de usuário e para mudar o tema do site -->
+        <div class="icons-of-ferramentas">
+            <!-- Imagem para mostrar a conta do usuário (Responsividade) -->
+                <img src="images/user-photo.svg" alt="menu-mobile" class="fotoCabaco">
+
+            <!-- Imagem para trocar o tema do site (Responsividade)-->
+            <img src="images/lua-theme.svg" alt="lua-theme" class="slz">
+        </div>
+    </header>
+
+    <!-- Nav de links responsivo para mobile -->
+    <nav class="nav-header-mobile">
         <ul class="ul-header-mobile">
             <li class="li-header-mobile"><a href="#" class="a-header-mobile">Inicio</a></li>
             <li class="li-header-mobile"><a href="#" class="a-header-mobile">Cursos</a></li>
@@ -86,6 +92,42 @@
             <li class="li-header-mobile"><a href="#" class="a-header-mobile">Empresa</a></li>
             <li class="li-header-mobile"><a href="#" class="a-header-mobile">Comunidade</a></li>
         </ul>
-     </nav>
+    </nav>
+
+    <!-- Box mostrando outras informações, conta, sair da conta, etc -->
+    <div class="box-perfil-mobile">
+
+        <!-- Caixa com o perfil do usuário -->
+        <div class="box-perfil">
+            <div class="background-perfil-modal-box">
+                <img src="images/user-photo.svg" alt="user-photo-perfil" id="user-photo-perfil">
+            </div><br>
+            <h3 style="text-align: center; color: #fff;">Usuário: Fulana Clery</h3>
+        </div>
+
+        <!-- Button para sair da conta -->
+        <a href="#">
+            <button class="btn-box-menu-mobile-info">Sair</button>
+        </a>
+    </div>
+
+    <!-- Iniciando o JavaScript do Header -->
+    <script>
+        
+        const openModal = document.querySelector('.fotoCabaco');
+        function toggleModal() {
+            openModal.addEventListener('click', () => {
+                const modal = document.querySelector('.box-perfil-mobile');
+
+                if (modal.classList.contains('open-box-modal-perfil-user')) {
+                    modal.classList.remove('open-box-modal-perfil-user');
+                } else {
+                    modal.classList.add('open-box-modal-perfil-user');
+                }
+            });
+        }
+        toggleModal();
+    </script>
 </body>
+
 </html>
