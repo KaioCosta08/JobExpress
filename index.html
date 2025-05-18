@@ -76,7 +76,7 @@
         <!-- Icons de usuário e para mudar o tema do site -->
         <div class="icons-of-ferramentas">
             <!-- Imagem para mostrar a conta do usuário (Responsividade) -->
-                <img src="images/user-photo.svg" alt="menu-mobile" class="fotoCabaco">
+            <img src="images/user-photo.svg" alt="menu-mobile" class="fotoCabaco">
 
             <!-- Imagem para trocar o tema do site (Responsividade)-->
             <img src="images/lua-theme.svg" alt="lua-theme" class="slz">
@@ -111,23 +111,28 @@
         </a>
     </div>
 
-    <!-- Iniciando o JavaScript do Header -->
-    <script>
+    <!-- Inicio do main da page -->
+    <main id="main-page">
         
-        const openModal = document.querySelector('.fotoCabaco');
-        function toggleModal() {
-            openModal.addEventListener('click', () => {
-                const modal = document.querySelector('.box-perfil-mobile');
+        <!-- Blue Box -->
+        <section class="section-one">
+            <div class="box-info-secOne">
+                <h1>Cursos Online</h1>
+                <h1>Vagas de Emprego</h1>
+                <h1>Comunidades</h1>
+                <h1>E muito mais!</h1>
+            </div>
 
-                if (modal.classList.contains('open-box-modal-perfil-user')) {
-                    modal.classList.remove('open-box-modal-perfil-user');
-                } else {
-                    modal.classList.add('open-box-modal-perfil-user');
-                }
-            });
-        }
-        toggleModal();
-    </script>
+            <div class="img-woman-happy">
+                <img src="images/mulher-felizBlueBox.svg" alt="happy-woman">
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Iniciando o JavaScript do Header -->
+    <script src="scripts/header.js"></script>
 </body>
 
 </html>

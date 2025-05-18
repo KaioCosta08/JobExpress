@@ -1,0 +1,44 @@
+.section-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #321BAB;
+}
+
+.box-info-secOne h1{
+    font-size: 3.9rem;
+    font-weight: 1000;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.img-woman-happy img{
+    position: relative;
+    top: 5.9px;
+}
+
+@media (max-width: 1100px) {
+    .section-one{
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .section-one{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .box-info-secOne{
+        /* text-align: center; */
+        margin-top: 10px;
+    }
+    .box-info-secOne h1{
+        font-size: 2.2rem;
+    }
+    .img-woman-happy img{
+        position: relative;
+        top: 26px;
+    }
+}
